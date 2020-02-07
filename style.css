@@ -1,0 +1,246 @@
+html {
+  overflow-x: hidden;
+}
+
+.frame {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Tajawal", sans-serif;
+  font-size: 1.2rem;
+  color: #707070;
+  background: #fff;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .frame-content {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .frame-content {
+    width: 100%;
+    max-width: 117rem;
+    margin: 4px auto;
+  }
+}
+
+.frame-content {
+  max-width: 40.7rem;
+  width: 100%;
+  margin: 4px auto;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.frame-top {
+  
+  width: 100vw;
+  text-align: center;
+  margin-bottom: 40px;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0.8))
+  );
+  mask-image: linear-gradient(center top, center bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.frame-top img {
+  width: 650px;
+}
+
+.frame-bottom {
+  width: 100vw;
+  text-align: center;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    center bottom,
+    center top,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0.3))
+  );
+  mask-image: linear-gradient(center bottom, center top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.frame-bottom img {
+  width: 650px;
+}
+
+.frame-container {
+  max-width: 37rem;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+
+}
+
+.frame h1,
+.frame h2 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.8rem;
+  color: #ba9a3a;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.frame-header {}
+
+.frame-panel .or {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold 22px/30px Nunito;
+  letter-spacing: 0;
+  color: #ba9a3a;
+}
+
+.frame-panel .or:after,
+.frame-panel .or:before {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #e2e7f5;
+  width: 50%;
+  margin: 0 2%;
+}
+
+input[type="text"]:disabled {
+  background: gry;
+}
+
+.frame-form {
+  margin-bottom: 4.2rem;
+}
+
+.frame .control-label {
+  color: #ba9a3a;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.frame button,
+.frame label {
+  font-size: 1.3rem;
+}
+
+.confirm {
+  font-size: 1.3rem;
+  background: #ba9a3a;
+  color: white;
+  padding: 80px 150px;
+  border-radius: 15px;
+  text-align: center;
+  position: fixed;
+  top: 26%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Tajawal", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.deny {
+  font-size: 1.3rem;
+  background: #ff5454;
+  color: white;
+  padding: 40px 100px;
+  border-radius: 15px;
+  text-align: center;
+  position: fixed;
+  top: 22%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Tajawal", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.blur {
+  display: block;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.disable {
+  position: relative;
+  transform: translateY(-114%);
+  widows: 100vw;
+  height: 100vh;
+  background-color: transparent;
+
+}
+
+.frame .has-feedback .form-control {
+  padding-left: 1rem;
+}
+
+.frame .form-control {
+  border-radius: 4px;
+  border: solid 1px #a0aec0;
+  color: #707070;
+  letter-spacing: 0.03rem;
+  font-size: 1.1rem;
+  height: 3rem;
+  padding-right: 0.4rem;
+  direction: rtl;
+}
+
+.frame .btn-default {
+  color: #fff;
+  background: #ba9a3a;
+}
+
+code {
+  color: black !important;
+}
+
+button span {
+  color: #ba9a3a !important;
+}
+.door-handle{
+  transition: all 2s;
+  
+}
+.door-handle-fliped{
+  transition: all 2s;
+  
+}
+.door-handle:hover{
+  -ms-transform: rotate(20deg); 
+  transform: rotate(20deg);
+  
+} 
+.door-handle-fliped:hover{
+  -ms-transform: rotate(-20deg); 
+  transform: rotate(-20deg);
+  
+} 
+.door-handle:active{
+  -ms-transform: rotate(20deg); 
+  transform: rotate(20deg);
+  
+} 
+.door-handle-fliped:active{
+  -ms-transform: rotate(-20deg); 
+  transform: rotate(-20deg);
+  
+} 
+h5 a{
+  color: #707070;
+}
