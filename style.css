@@ -57,6 +57,25 @@ html {
 .frame-top img {
   width: 650px;
 }
+.frame-top a{
+  position: absolute;
+  text-shadow: 0 0 0.5rem #babbbc;
+  text-decoration: none;
+  color: #ba9a3a;
+  font-size: 20pt;
+  left: 560px;
+  right: 0;
+  transition: all 0.2s;
+ }
+ .frame-top a:hover{
+   text-shadow: 0 0 1rem #babbbc;
+   font-size: 21pt;
+  }
+  .frame-top a:active{
+   text-shadow: 0 0 1rem #babbbc;
+   font-size: 21pt;
+  }
+ 
 img{
   -webkit-touch-callout: none;
   -webkit-user-select: none;
