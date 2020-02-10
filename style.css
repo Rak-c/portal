@@ -124,7 +124,7 @@ h2 {
   text-transform: capitalize;
 }
 
-.frame-header {}
+
 
 .frame-panel .or {
   padding: 16px 0;
@@ -135,6 +135,7 @@ h2 {
   letter-spacing: 0;
   color: #ba9a3a;
 }
+
 
 .frame-panel .or:after,
 .frame-panel .or:before {
@@ -241,18 +242,31 @@ code {
 button span {
   color: #ba9a3a !important;
 }
+.border-1 {
+  border: 1px solid #e2e7f5;
+  padding: 80px  71px 170px 35px;
+}
+.border-2{
+  border: 1px solid #e2e7f5;
+  padding: 80px 36px 170px 75px;
+}
+
 .door-handle{
+  
+  width: 150px;
   transition: all 0.3s;
   text-decoration: none;
   
 }
 .door-handle-fliped{
+  width: 150px;
   transition: all 0.3s;
+  text-decoration: none;
   
 }
 .door-handle:hover{
-  -ms-transform: rotate(20deg) scale(1.1); 
-  transform: rotate(20deg) scale(1.1);
+  -ms-transform: rotate(-20deg) scale(1.1); 
+  transform: rotate(-20deg) scale(1.1);
   
 } 
 .door-handle-fliped:hover{
@@ -261,8 +275,8 @@ button span {
   
 } 
 .door-handle:active{
-  -ms-transform: rotate(20deg) scale(1.1); 
-  transform: rotate(20deg) scale(1.1);
+  -ms-transform: rotate(-20deg) scale(1.1); 
+  transform: rotate(-20deg) scale(1.1);
   
 } 
 .door-handle-fliped:active{
@@ -281,6 +295,7 @@ a:hover{
   margin: 30px auto; 
   line-height: 0;
   word-spacing: 2px;
+  text-align: center;
 }
 .img-text h5{
   font-size: 15pt;
